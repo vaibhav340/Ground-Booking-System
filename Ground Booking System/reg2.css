@@ -1,0 +1,24 @@
+body {
+    background-image:url(a.jpg);
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size:;
+    background-position: center;
+}
+
+
+
+
+
+.loginBox{
+   position:absolute;
+    left : 50%;
+    top: 50%;
+   transform: translate(-50%,-50%);
+    width:auto;
+    height: auto;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    
+    background-color:gray;
+}

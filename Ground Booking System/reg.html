@@ -1,0 +1,51 @@
+<html>
+<head><title>REGISTER  </title>  
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="rg.css">
+<script type="text/javascript">
+	function display(){
+	
+		var password=document.getElementById("password").value;
+		var confirm_password=document.getElementById("confirm_password").value;
+		
+			if(password!=confirm_password){
+				alert("paswword dosen't match");
+				return false;
+			}
+			
+			return true;
+		
+	}
+	</script>
+
+</head>
+
+<body>
+<div class = "loginBox">
+     <img src=" logo.jpg" class="user">
+    <h2>Register Here</h2>
+    <form action="register.php" method="post">
+    <p>Enter Name </p>
+         <input type="text" name="name" required pattern="(?=.*([\w]).*)[\w]*" placeholder="enter name">
+         <p>Enter contact Number </p>
+         <input type="tel" name="mobino" required pattern="[0-9]{10}" placeholder="enter numeric value">
+        
+        
+        <p>E-mail</p>
+                 <input type="email" name="email" placeholder="enter e-mail" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$">
+    <p>Password</p>
+                 <input type="password" id="password" name="password" placeholder="*******" required pattern=".{8,15}" > 
+        
+        <p>Enter Password Again</p>
+                 <input type="password" id="confirm_password" name="cpassword" placeholder="*******">
+         <input type="submit" onclick="return display()" value="Submit">
+        
+    </form>   
+    
+    </div>
+
+
+</body>
+
+</html>
